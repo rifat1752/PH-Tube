@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5c218f1ac2.js" crossorigin="anonymous"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<!-- tailwind -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+<!-- font awosome -->
+<script src="https://kit.fontawesome.com/5c218f1ac2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="h-20   flex flex-row item-center justify-center   m-auto mx-auto ">
+        <div style="border-bottom: 2px solid rgba(0, 0, 0, 0.103);" class="  mx-auto w-11/12 flex lg:flex-row items-center justify-between">
+         <a href="index.html"><img class="w-44 h-10" src="./images/Logo.png" alt=""></a>
+         <a href="" class="btn btn-error capitalize text-">Blog</a>
+        </div>
+     </header>
+     <section class="w-11/12 mx-auto bg-base-400">
+        <div class="QA">
+            <div class="qa">
+                <ul style="list-style-type: square;" class="flex flex-col my-10"> 
+                    <li class="q-1 "><h1 class="text-2xl font-semibold">Discuss the scope of var, let, and const.</h1>
+                        <ul class="ml-5" style="list-style-type: disc;" >
+                            In JavaScript, var, let, and const are used to declare variables, but they have different scopes and behaviors. Let's discuss the scope of each of these variable declaration keywords:
+                            <li><b>VAR: </b>Variables declared with var are function-scoped, meaning they are accessible within the function in which they are declared, but not outside of it. Variables declared with var are hoisted to the top of their containing function or global scope. This means that even if you declare a variable at the bottom of a function, it will be as if it was declared at the top.</li>
+                           
+                            <li><b>LET: </b> Variables declared with let have block scope, meaning they are limited to the block (inside curly braces {}) where they are defined, whether that's within a function, loop, or any other block structure.
+                                 Variables declared with let are hoisted to the top of their containing block but are not initialized. This is known as the "temporal dead zone," and accessing a let variable before it's declared results in a ReferenceError.</li>
+                            <li><b>CONST: </b> Variables declared with const also have block scope, just like let. const variables are immutable, meaning their value cannot be reassigned after they are initially assigned. However, for objects and arrays declared with const, you can still modify their properties or elements.</li>
+                        </ul>
+                    </li>
+                    <li class="q-2 mt-10" >
+                        <h1 class="text-2xl font-semibold">Tell us the use cases of null and undefined.</h1>
+                        <ul class="ml-5" style="list-style-type: disc;" >
+                            n JavaScript, both null and undefined represent the absence of a value, but they are used in slightly different contexts and have distinct use cases:
+                            <li>To represent the absence of a value. This is the most common use case for both null and undefined. For example, you could use null to represent a user who has not logged in, or undefined to represent a property that does not exist on an object.</li>
+                            <li>To control the flow of your program. You can use null and undefined to check if a value is present or not. This can be useful for things like validating user input, or branching your code based on the availability of data.</li>
+                            <li>To pass a default value to a function. If you don't know what value a function will receive, you can pass null or undefined as the default value. This will prevent the function from crashing if the value is not present.</li>
+                            <li>To represent an empty object. You can use null to create an empty object. This can be useful for things like creating a placeholder object, or initializing an object that will be filled with data later.</li>
+                        </ul>
+                    </li>
+                    <li class="q-3 mt-10" >
+                        <h1 class="text-2xl font-semibold">What do you mean by REST API?.</h1>
+                        <ul class="ml-5" style="list-style-type: disc;" >
+                            REST API stands for Representational State Transfer Application Programming Interface. It is an architectural style for designing APIs that are based on the principles of HTTP. REST APIs are used to facilitate communication between different systems or applications over the internet.The main principles of REST are:
+
+                            <li>Resource-oriented: Resources are the basic unit of interaction in REST APIs. A resource can be anything, such as a user, a product, or an order.</li>
+                            <li>Stateless: REST APIs are stateless, which means that each request must contain all the information necessary to process it. This makes REST APIs scalable and efficient.</li>
+                            <li>Cacheable: REST APIs should be cacheable, which means that the results of a request can be stored in memory for future reuse. This can improve performance and reduce network traffic.</li>
+                            <li>Layered: REST APIs can be layered, which means that they can be divided into different layers, each of which performs a specific function. This makes REST APIs more complex, but it also makes them more flexible and scalable.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+     </section>
+     
+</body>
+</html>
